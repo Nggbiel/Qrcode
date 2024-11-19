@@ -1,0 +1,112 @@
+/* Estilo geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #6a11cb, #2575fc);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container principal */
+.container {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 2px solid white;
+}
+
+/* Conteúdo principal */
+.audio-card {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.audio-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Imagem Responsiva */
+.audio-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.audio-card audio {
+    background: white;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Estilo Responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .audio-card h2 {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .audio-image {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .audio-card h2 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+
+    .audio-image {
+        max-width: 250px;
+    }
+}
